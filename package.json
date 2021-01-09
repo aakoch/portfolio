@@ -4,7 +4,7 @@
   "description": "Adam's Portfolio",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "parcel build index.pug --public-url ./"
   },
   "repository": {
     "type": "git",
@@ -16,13 +16,7 @@
     "url": "https://github.com/aakoch/portfolio/issues"
   },
   "homepage": "https://github.com/aakoch/portfolio#readme",
-  "devDependencies": {
-    "@11ty/eleventy": "^0.11.1",
-    "eleventy-plugin-sass": "git://github.com/tgdev/eleventy-plugin-sass.git#587b878d19280766f58c50a979847da385457448"
-  },
   "dependencies": {
-    "bootstrap": "^5.0.0-beta1",
-    "nunjucks": "^3.2.2",
-    "parcel-plugin-nunjucks": "^2.2.2"
+    "bootstrap": "^5.0.0-beta1"
   }
 }
