@@ -18,6 +18,22 @@
     <hr class="my-4">
   </div>
 
+  <template id="test-template-template"><p><slot name="template-text">This is inside my test template</slot></p></template>
+
+  <template id="card-template-template">
+    <div class="col-xs-12 col-md-4 col-xl-3">
+      <div class="card">
+        <div class="card-body">
+        <img class="card-img-top" src="">
+          <h5 class="card-title"><slot name="title">Default title</slot></h5>
+          <p class="card-text"><slot name="description">Default description</slot></p>
+          <a href="#" class="btn btn-primary">Some default link</a>
+        </div>
+      </div>
+    </div>
+
+  </template>
+
   {% block content %}{% endblock %}
 
 </div>
