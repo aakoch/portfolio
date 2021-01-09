@@ -1,9 +1,20 @@
-mixin card(title, description, buttonLink='#', buttonText, imgSrc)
+mixin card(title, description, buttonLink='#', buttonText, imgSrc, index)
   .col-xs-12.col-md-4.col-xl-3
     .card
-      if imgSrc
-        img.card-img-top.img-thumbnail(src=imgSrc)
-      .card-body
-        h5.card-title= title
-        p.card-text!= description
-        a.card-link(href=buttonLink)= buttonText
+      .card-header
+        ul.nav.nav-tabs.card-header-tabs(role='tablist' id='myTab-'+index)
+          li.nav-item(role='presentation')
+            a.nav-link.active(id='home-tab-'+index data-bs-toggle='tab' role='tab' href='#home-'+index aria-controls="home" aria-selected="true") Summary
+          li.nav-item(role='presentation')
+            a.nav-link(id='more-tab-'+index data-bs-toggle='tab' role='tab' href='#more-'+index aria-controls="more" aria-selected="false") More
+      .card-body.tab-content(id='myTabContent-'+index)
+        .tab-pane.fade.show.active(id='home-'+index role='tabpanel' aria-labelledby='home-tab-'+index)
+          if imgSrc
+            img.card-img-top.img-thumbnail(src=imgSrc)
+          h5.card-title= title
+          p.card-text!= description
+          a.card-link(href=buttonLink)= buttonText
+        .tab-pane.fade(id='more-'+index role='tabpanel' aria-labelledby='more-tab-'+index) TODO
+
+
+  

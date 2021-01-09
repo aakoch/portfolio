@@ -1,4 +1,4 @@
-import { } from 'bootstrap';
+import { Card } from 'bootstrap';
 // import {} from 'nunjucks';
 
 // customElements.define('test-template',
