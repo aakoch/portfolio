@@ -33,4 +33,9 @@ $light: #fffff3;
   border-radius: 1rem;  
 }
 
+.source-link {
+  @extend .text-end;
+  font-size: .8em;
+}
+
 @import "~bootstrap/scss/bootstrap";
