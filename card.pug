@@ -14,7 +14,11 @@ mixin card(title, description, buttonLink='#', buttonText, imgSrc, index)
           h5.card-title= title
           p.card-text!= description
           a.card-link(href=buttonLink)= buttonText
-        .tab-pane.fade(id='more-'+index role='tabpanel' aria-labelledby='more-tab-'+index) TODO
+        .tab-pane.fade(id='more-'+index role='tabpanel' aria-labelledby='more-tab-'+index)
+          if block
+            block
+          else
+            p No content provided
 
 
   
