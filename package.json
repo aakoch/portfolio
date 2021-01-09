@@ -19,5 +19,8 @@
   "dependencies": {
     "@popperjs/core": "^2.6.0",
     "bootstrap": "^5.0.0-beta1"
+  },
+  "devDependencies": {
+    "pug": "^3.0.0"
   }
 }
