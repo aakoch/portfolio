@@ -1,4 +1,8 @@
 
+ $red: #b31313;
+ $green: #90b313;
+ $blue: #132bb3;
+
     body {
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
       background-color: white;
@@ -81,28 +85,19 @@
       right: 0;
     }
 
-    .green .timeline-content:after {
-      background: #90b313;
-    }
-
+    .green .timeline-content:after,
     .green .timeline-date:before {
-      background: #90b313;
+      background: $green;
     }
 
-    .red .timeline-content:after {
-      background: #b31313;
-    }
-
+    .red .timeline-content:after,
     .red .timeline-date:before {
-      background: #b31313;
+      background: $red;
     }
 
-    .blue .timeline-content:after {
-      background: #132bb3;
-    }
-
+    .blue .timeline-content:after,
     .blue .timeline-date:before {
-      background: #132bb3;
+      background: $blue;
     }
 
     .timeline-date {
