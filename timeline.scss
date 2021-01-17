@@ -1,0 +1,123 @@
+
+    body {
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      background-color: white;
+      padding: 2em;
+      color: black;
+    }
+
+    .container {
+      padding: 2em;
+      position: relative;
+    }
+
+
+    .timeline-header {
+      font-size: 2rem;
+    }
+
+    a {
+      text-decoration: none
+    }
+
+    h4 {
+      text-align: center;
+      margin: 30px 0;
+      color: #444
+    }
+
+    .container {
+      position: relative
+    }
+
+    .timeline-entry {
+      position: relative;
+      padding-top: 5em;
+      margin-bottom: 3em;
+    }
+
+    .timeline-container:before {
+      content: "";
+      width: 4px;
+      height: 100%;
+      border-radius: 20px;
+      margin: 0 auto;
+      background: #202020;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .timeline-container {
+      padding: 2em;
+    }
+
+    .timeline-content {
+      padding-left: 1rem;
+      padding-right: 1rem;
+      position: absolute;
+      top: 0;
+      width: 20%;
+      background: linear-gradient(#ffffff, #2020201e);
+    }
+
+    .left .timeline-content {
+      right:50%;
+      transform:translate(-2px, 0);
+    }
+
+    .right .timeline-content {
+      left:50%;
+      transform:translate(2px, 0);
+    }
+
+    .timeline-content:after {
+      content: "";
+      width: 100%;
+      height: 4px;
+      border-radius: 20px;
+      background: #202020;
+      position: absolute;
+      right: 0;
+    }
+
+    .timeline-date {
+      width: 20%;
+      position: absolute;
+    }
+
+    .left .timeline-date {
+      left:50%;
+      padding-left: 1rem;
+    }
+
+    .right .timeline-date {
+      right:50%;
+      padding-right: 1rem;
+      text-align: right;
+    }
+
+    .timeline-date:before {
+      content: "";
+      width: 20px;
+      height: 100%;
+      border-radius: 20px;
+      margin: 0 auto;
+      background: #90b313;
+      position: absolute;
+      top: 0;
+      border: white solid 3px;
+      margin: 0;
+      padding: 0;
+    }
+
+    .left .timeline-date:before {
+      left: 0;
+      transform:translate(-50%,0);
+    }
+
+    .right .timeline-date:before {
+      right: 0;
+      transform:translate(50%, 0);
+    }
