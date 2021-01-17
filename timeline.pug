@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+<meta charset="utf-8">
+<title>Timeline</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="./timeline.scss">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container">
+<div class="timeline-container">
+
+
+- var n = 0;
+mixin timelineEntry(title, description, date)
+  - var color
+  if n % 3 == 0
+    - color = 'red'
+  else if n % 3 == 1
+    - color = 'green'
+  else
+    - color = 'blue'
+
+  div.timeline-entry(class=color)(class=n %2 == 0 ? "left" : "right")
+    div.timeline-content
+      h3.title= title
+      p.description= description
+    div.timeline-date= date
+  - n++
+
+
++timelineEntry('TD Ameritrade', 'Senior Software Developer', 'October 2016')
++timelineEntry('Union Pacific', 'Systems Engineer', 'September 2013')
++timelineEntry('Union Pacific', 'Associate Systems Engineer', 'April 2011')
++timelineEntry('Union Pacific', 'Project through Senior Project Engineer', 'July 2005')
++timelineEntry('Union Pacific', 'Associate through Senior Application Developer', 'March 2000')
+
+
+
+
+</div>
+</div>
+
+<script src="./index.js"></script>
+</body>
+
+</html>

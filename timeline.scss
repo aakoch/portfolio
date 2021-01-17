@@ -86,7 +86,9 @@
     }
 
     .green .timeline-content:after,
-    .green .timeline-date:before {
+    .green .timeline-date:before,
+    .color0 .timeline-content:after,
+    .color0 .timeline-date:before {
       background: $green;
     }
 
