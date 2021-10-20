@@ -1,4 +1,4 @@
-@import "~bootstrap/scss/_functions";
+@import "/node_modules/bootstrap/scss/_functions";
 
 // Your variable overrides
 // // $body-color: #b87866;
@@ -16,9 +16,9 @@ $light: #fffff3;
 // $link-color: $danger;
 // $link-hover-color: mix($dark, $secondary, 10%);
 
-@import "~bootstrap/scss/_variables";
+@import "/node_modules/bootstrap/scss/_variables";
 
-@import "~bootstrap/scss/_mixins";
+@import "/node_modules/bootstrap/scss/_mixins";
 
 .main {
   margin: 1em;
@@ -38,4 +38,4 @@ $light: #fffff3;
   font-size: .8em;
 }
 
-@import "~bootstrap/scss/bootstrap";
+@import "/node_modules/bootstrap/scss/bootstrap";
