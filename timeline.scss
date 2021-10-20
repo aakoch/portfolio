@@ -63,7 +63,18 @@
       position: absolute;
       top: 0;
       min-width: 28%;
-      background: linear-gradient(#ffffff, #2020201e);
+    }
+
+    .red .timeline-content {
+      background: linear-gradient(#ffffff, #57282834);
+    }
+
+    .blue .timeline-content {
+      background: linear-gradient(#ffffff, #28375734);
+    }
+
+    .green .timeline-content {
+      background: linear-gradient(#ffffff, #2a572834);
     }
 
     .left .timeline-content {
@@ -86,9 +97,7 @@
     }
 
     .green .timeline-content:after,
-    .green .timeline-date:before,
-    .color0 .timeline-content:after,
-    .color0 .timeline-date:before {
+    .green .timeline-date:before {
       background: $green;
     }
 
@@ -105,6 +114,7 @@
     .timeline-date {
       width: 20%;
       position: absolute;
+      font-style: italic;
     }
 
     .left .timeline-date {
